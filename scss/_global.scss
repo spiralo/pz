@@ -1,0 +1,173 @@
+// Typography
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include heading-font;
+}
+
+// Custom Horizontal Rule with Star Icon
+hr.star-light,
+hr.star-dark,
+hr.star-white,
+hr.star-yellow {
+  max-width: 15rem;
+  padding: 0;
+  text-align: center;
+  border: none;
+  border-top: solid 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+hr.star-light:after,
+hr.star-dark:after,
+hr.star-white:after,
+hr.star-yellow:after {
+  position: relative;
+  top: -.8em;
+  display: inline-block;
+  padding: 0 0.25em;
+  content: '\f005';
+  font-family: FontAwesome;
+  font-size: 2em;
+}
+
+hr.star-light {
+  border-color: $white;
+}
+hr.star-light:after {
+  color: $white;
+  background-color: $secondary;
+}
+
+hr.star-dark {
+  border-color: $secondary;
+}
+hr.star-dark:after {
+  color: $secondary;
+  background-color: $primary;
+}
+
+hr.star-white {
+  border-color: $secondary;
+}
+hr.star-white:after {
+  color: $secondary;
+  background-color: white;
+}
+
+hr.star-yellow {
+  border-color: $secondary;
+}
+hr.star-yellow:after {
+  color: $secondary;
+  background-color: $yellow;
+}
+
+// Section Padding Settings
+section {
+  padding: 6rem 0;
+  h2 {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    h2 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+}
+.conteneurTop{
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  /*width: 1000px;*/
+  height: 50px;
+  background:url("../img/top.png");
+  background-repeat: repeat-x;
+  /*background-color: blue;*/
+}
+.img-container{
+  margin-top: 20px;
+}
+.photo{
+  float: left;
+  margin-right: 10px;
+}
+.conteneur-aneth {
+  /*background-color: red;*/
+  /*width: 114px;*/
+  text-align: center;
+  margin-bottom: 20px;
+  img{
+    width: 114px;
+    /*background-color: blue;*/
+  }
+}
+.conteneur-liste{
+  background-color: #eee;
+  margin-top: 80px;
+  padding: 20px;
+  display: inline-block;
+}
+.conteneur-liste ul{
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  list-style: none;
+  padding: 0;
+  width: 280px;
+  li{
+    /*margin : auto;*/
+    /*padding-left: 1.3em;*/
+    /*margin-left: auto;
+    margin-right: auto;*/
+  }
+  li:before{
+    content: '\f00c';
+    font-family: FontAwesome;
+    margin-right: 1em;
+  };
+}
+#mapid { 
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+// Custom Button Size
+.btn-xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+}
+
+// Custom Rounded Social Button
+.btn-social {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+}
+
+// Scroll to Top Button
+.scroll-to-top {
+  z-index: 1042;
+  right: 1rem;
+  bottom: 1rem;
+  display: none;
+  a {
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: fade-out($gray-900, 0.5);
+    line-height: 3.1rem;
+  }
+}

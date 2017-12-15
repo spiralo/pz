@@ -1,0 +1,7 @@
+# ignorer tous les fichiers ou répertoires foo	foo
+# ignorer le répertoire build à la racine du projet	/build
+# ignorer tous les fichiers ayant l’extension pyo ou pyc	*.py[oc]
+# ignorer tous les fichiers commençant par temp sauf template	temp*
+# !template
+/_zip
+.DS_Store
