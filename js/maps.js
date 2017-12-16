@@ -1,5 +1,5 @@
-var zoom_carte = 11; // 11 par defaut
-var rayon_km = 20;
+var zoom_carte = 10; // 11 par defaut
+var rayon_km = 30;
 
 
 // Bayonne
