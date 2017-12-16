@@ -15,8 +15,20 @@ font-family: 'Amatic SC', cursive;
     font-family: Raleway;
     src: url(../fonts/Raleway-Regular.ttf);
 }
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(../fonts/Raleway-Bold.ttf);
+}
 
 /*
 Raleway-Regular.ttf
 Lato-Regular.ttf
 */
+
+/*@font-face {
+  font-family: MaHelvetica;
+  src: local("Helvetica Neue Bold"),
+       local("HelveticaNeue-Bold"),
+       url(MgOpenModernaBold.ttf);
+  font-weight: bold;
+}*/

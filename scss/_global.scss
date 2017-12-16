@@ -16,7 +16,9 @@ h6 {
 hr.star-light,
 hr.star-dark,
 hr.star-white,
-hr.star-yellow {
+hr.star-yellow,
+hr.star-grey
+ {
   max-width: 15rem;
   padding: 0;
   text-align: center;
@@ -29,7 +31,8 @@ hr.star-yellow {
 hr.star-light:after,
 hr.star-dark:after,
 hr.star-white:after,
-hr.star-yellow:after {
+hr.star-yellow:after,
+hr.star-grey:after {
   position: relative;
   top: -.8em;
   display: inline-block;
@@ -62,6 +65,13 @@ hr.star-white:after {
   color: $secondary;
   background-color: white;
 }
+hr.star-grey {
+  border-color: $secondary;
+}
+hr.star-grey:after {
+  color: $secondary;
+  background-color: #eee;
+}
 
 hr.star-yellow {
   border-color: $secondary;
@@ -85,6 +95,10 @@ section {
     }
   }
 }
+.bold{
+  @include heading-font-bold;
+  /*color: red;*/
+}
 .conteneurTop{
   position: absolute;
   top: 100%;
@@ -103,18 +117,19 @@ section {
   float: left;
   margin-right: 10px;
 }
-.conteneur-aneth {
+.conteneur-image {
   /*background-color: red;*/
   /*width: 114px;*/
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 30px;
   img{
     width: 114px;
     /*background-color: blue;*/
   }
 }
 .conteneur-liste{
-  background-color: #eee;
+  background-color: #ddd;
   margin-top: 80px;
   padding: 20px;
   display: inline-block;

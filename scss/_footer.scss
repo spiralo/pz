@@ -2,7 +2,16 @@
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: $secondary;
-  color: $white;
+  /*color: #ccc;*/
+  color: #ccc;
+  .keywords{
+  	text-align: justify;
+  	font-size: 80%;
+  }
+  .sitemap{
+  	text-align: left;
+  	font-size: 80%;
+  }
 }
 
 .copyright {

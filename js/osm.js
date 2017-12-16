@@ -1,16 +1,19 @@
+// var zoom_carte = 11; // 11 par defaut
+// var rayon_km = 20;
+var r = rayon_km * 500;
 
-var mymap = L.map('mapid').setView([43.4833, -1.4833], 11,{
+var mymap = L.map('mapid').setView([latitude, longitude], zoom_carte,{
     scrollWheelZoom: false
 });
 
 mymap.scrollWheelZoom.disable();
 mymap.dragging.disable();
 
-var circle = L.circle([43.4833, -1.4833], {
+var circle = L.circle([latitude, longitude], {
     color: 'red',
     fillColor: '#f03',
     fillOpacity: 0.1,
-    radius: 10000
+    radius: r
 }).addTo(mymap);
 
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
